@@ -25,27 +25,27 @@
 RUN mkdir -p /projects/hello_avro_cpp/build
 COPY /hello_avro_cpp/ /projects/hello_avro_cpp/
 WORKDIR /projects/hello_avro_cpp/build 
-#RUN cmake ../
-#RUN make -j10 #10 is a number threads to compile 
+#RUN cmake ../ &&\
+#   make -j10 #10 is a number threads to compile 
 
 #-------------------------------------------
 #        Hello World LibKafka              -
 #-------------------------------------------
-RUN mkdir -p /projects/hello_libkafka_cpp/build
-COPY /hello_libkafka_cpp/ /projects/hello_libkafka_cpp/
-WORKDIR /projects/hello_libkafka_cpp/build 
-#RUN cmake ../
-#RUN make -j10 #10 is a number threads to compile
+#RUN mkdir -p /projects/hello_libkafka_cpp/build
+#COPY /hello_libkafka_cpp/ /projects/hello_libkafka_cpp/
+#WORKDIR /projects/hello_libkafka_cpp/build 
+#RUN cmake ../ &&\
+#   make -j10 #10 is a number threads to compilee
       
 #-------------------------------------------
 #           Hello World LibSerdes          -
 #-------------------------------------------
-RUN mkdir -p /projects/hello_libserdes_cpp/build
-COPY /hello_libserdes_cpp/ /projects/hello_libserdes_cpp/
-WORKDIR /projects/hello_libserdes_cpp/build 
-#RUN cmake ../
-#RUN make -j10 #10 is a number threads to compile
-WORKDIR /projects
-CMD [ "/bin/bash" ] 
+# RUN mkdir -p /projects/hello_libserdes_cpp/build
+# COPY /hello_libserdes_cpp/ /projects/hello_libserdes_cpp/
+# WORKDIR /projects/hello_libserdes_cpp/build 
+#RUN cmake ../ &&\
+#   make -j10 #10 is a number threads to compile 
+
+# CMD [ "/bin/bash" ] 
 
 

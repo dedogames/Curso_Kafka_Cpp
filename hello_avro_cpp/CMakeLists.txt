@@ -94,7 +94,7 @@ if(LIBSERDES)
 #LIBSERDES DEFINITIONS
 SET(libserdes_INCLUDE_DIR ${LIBRARIES_INCLUDE_PATH} ${LIBRARIES_INCLUDE_PATH}/libserdes)
 SET(libserdes_LIBRARIES  ${LIBRARIES_LIBRARY_PATH}/libserdes++.a ${LIBRARIES_LIBRARY_PATH}/libserdes.a )
-include_directories(${kafka_INCLUDE_DIR})
+include_directories(${libserdes_INCLUDE_DIR})
 endif(LIBSERDES)
 
 #DL DEFINITIONS
