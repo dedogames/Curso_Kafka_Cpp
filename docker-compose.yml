@@ -1,0 +1,58 @@
+#########################################################
+# DockerCompose.yml                                     #
+# Date: 05-02-2021                                      #
+# Developer: Gelson Rodrigues                           #
+#                                                       #
+# This script has two contianers:                       #
+#   1 - kafka-cluster: landoop/fast-data-dev:cp3.3.0    #
+#   2 - kafka_examples: hello_kafka:latest              #
+#       . Simples Avro cpp examples                     #
+#       . Create a topic with Librdkafka                #
+#       . Create a topic with Libserdes                 #
+#########################################################
+
+#----------------------------------------------------------------------------
+# RUN--: docker-compose.exe up -d
+#----------------------------------------------------------------------------
+
+version: '3'
+
+services:  
+#------------------------------ Container 0 kafka  --------------------------------
+  kafka-cluster:
+    image: landoop/fast-data-dev:cp3.3.0
+    environment: 
+      ADV_HOST:    kafka-cluster
+      RUNTESTS:    0
+      FORWARDLOGS: 0
+      SAMPLEDATA:  0 
+    ports:
+      - 2181:2181                 # Zookeeper
+      - 3030:3030                 # Landoop UI
+      - 8081-8083:8081-8083       # REST Proxy, Schema Registry, Kafka Connect ports
+      - 9581-9585:9581-9585       # JMX Ports
+      - 9092:9092                 # Kafka Broker
+    networks:
+     - local
+    volumes:
+     - ./kafka_volume:/tmp
+
+#------------------------------ Container Simple examples in Cpp  ------------------------------     
+  
+  kafka_examples:
+    container_name: kafka_examples
+    image: hello_kafka:latest
+    build: .  
+    entrypoint: ["tail", "-f", "/dev/null"] #keep container alive
+    depends_on:
+      - kafka-cluster
+    networks:
+      - local     
+    volumes:
+      - ./hello_avro_cpp:/projects/hello_avro_cpp
+      - ./hello_libkafka_cpp:/projects/hello_libkafka_cpp
+      - ./hello_libserdes_cpp:/projects/hello_libserdes_cpp
+      
+networks:
+  local:
+    driver: bridge    
