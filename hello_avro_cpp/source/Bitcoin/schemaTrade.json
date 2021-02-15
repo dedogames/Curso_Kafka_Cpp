@@ -1,0 +1,14 @@
+{
+    "name": "trade",
+    "type": "record",
+    "namespace":"bitcoin",
+    "fields":
+    [
+        {"name":"tid", "type":"string","doc":"Data e hora da negociação em Era Unix" },
+        {"name":"date", "type":"string","doc":"Identificador da negociação" },
+        {"name":"type", "type":"string","doc":"Indica a ponta executora da negociação(buy|sell)" },
+        {"name":"price", "type":"string","doc":"Preço unitário da negociação" },
+        {"name":"amount", "type":"string","doc":"Quantidade da negociação" }
+    ]
+ }
+ 
