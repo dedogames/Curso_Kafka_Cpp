@@ -86,6 +86,6 @@ trade.serialize();
 trade.deserialize();
 ```
 
-* [** Referência Avro CPP**](http://avro.apache.org/docs/current/api/cpp/html/index.html)
+* [Referência Avro CPP](http://avro.apache.org/docs/current/api/cpp/html/index.html)
 
  
