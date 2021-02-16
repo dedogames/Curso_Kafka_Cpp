@@ -25,9 +25,12 @@ Esse problema do ambiente em si, foi minha maior motivação de iniciar esse cur
 
 O objetivo principal do curso é o Apache Kafka, muito ultilizado em sistemas com alto trafégo de informações, porém com pouca documentação em inglês, quanto mais em português.
 
-```diff
-- Esse curso não é voltado para iniciantes, caso queria aprender mais sobre os tópicos como C++, Apache Kafka, há diversos materais na internet que são uteis, abaixo cito algumas das minhas fontes.
+ ```json
+   // code for coloring
+   Esse curso não é voltado para iniciantes, caso queria aprender mais sobre os tópicos como C++,Apache Kafka, há diversos materais na internet que são uteis, abaixo cito algumas das minhas fontes.
 ```
+
+ 
 
 * [Livro do mestre(C++)](https://www.amazon.com.br/C-Programming-Language-Bjarne-Stroustrup/dp/0321563840)
 * [Livro Apache Kafka(Java)](https://www.confluent.io/resources/kafka-the-definitive-guide/)
