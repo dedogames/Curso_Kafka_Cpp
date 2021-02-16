@@ -83,7 +83,7 @@ Para esse exemplo usei um schema simples representando um negócio do mercado Bi
     ]
  } 
 ```
-E para torna as coisas mais simples abstrai o Avro-cpp, abaixo um exemplo em *C++* de como criar um negócio e serializar/desserialização.
+E para torna as coisas mais simples abstrai o Avro-cpp, abaixo um exemplo em *C++* de como criar um negócio(objeto Trade) e serializar/desserializar.
 ```cpp
 bitcoin::Trade trade("8615953", "1613358560", "buy", "263249.83999", "0.03000899");
 trade.serialize();
