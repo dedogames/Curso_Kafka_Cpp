@@ -1,3 +1,11 @@
+//
+// Application.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Developer: Gelson Rodrigues
+// geoldery@gmail.com
+//
+// Main application 
 #ifndef APPLICATION_HPP
 #define APPLICATION_HPP
 #include <iostream>
