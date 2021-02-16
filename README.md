@@ -40,14 +40,14 @@ Para Simplicar as coisas eu criei imagens usando o Dockerhub, com essa ferrament
 
 Eu criei 3 imagens:
 
-1.  **Centos Os 8** 
-   -Nela já baixei o gcc, cmake, make, perl,boost entre outras ferramentas.
+1. **CentosOs 8** 
+   - Nela já baixei o gcc, cmake, make, perl,boost entre outras ferramentas.
 
-2.  **Bibliotecas para compilar**   
-   -Nessa imagem todas as libs que compilo a partir do código(librdkafka, avro-cpp, avro-c, libserdes) e instalo elas no /user/local
+2. **Bibliotecas para compilar**   
+   - Nessa imagem todas as libs que compilo a partir do código(librdkafka, avro-cpp, avro-c, libserdes) e instalo elas no /user/local
 
-3.  **Código exemplos**   
-   -Essa é a imagem do desenvolvimento em sí, dela contém os exemplos com Avro-cpp, librdkafka e libserdes e também a partir dela rodo a imagem [**Landoop**](https://github.com/lensesio/fast-data-dev) para rodar a kafka em si.
+3. **Código exemplos**   
+   - Essa é a imagem do desenvolvimento em sí, dela contém os exemplos com Avro-cpp, librdkafka e libserdes e também a partir dela rodo a imagem [**Landoop**](https://github.com/lensesio/fast-data-dev) para rodar a kafka em si.
    
 Para rodar o ambiente é necessário apenas instalar o **DockerHub** e **DockerCompose**, após instalar apenas rodar o comando
 ```json
