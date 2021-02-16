@@ -49,7 +49,7 @@ Eu criei 3 imagens:
 3. **Código exemplos**   
    - Essa é a imagem do desenvolvimento em sí, dela contém os exemplos com Avro-cpp, librdkafka e libserdes e também a partir dela rodo a imagem [**Landoop**](https://github.com/lensesio/fast-data-dev) para rodar a kafka em si.
    
-Para rodar o ambiente é necessário apenas instalar o **DockerHub** e **DockerCompose**, após instalar apenas rodar o comando
+Para rodar o ambiente é necessário apenas instalar o **DockerHub** e **DockerCompose**, após instalar apenas rodar o comando dentro do diretório onde esta projeto.
 ```json
 docker-compose.exe up -d --build 
 ```
@@ -57,7 +57,6 @@ Para parar os containers,digite no terminal
 ```json
 docker-compose.exe down
 ```
-
 
 <!-- AVRO CPP -->
 ## Exemplo simples em Avro Cpp
