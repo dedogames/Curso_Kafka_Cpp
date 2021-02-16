@@ -11,9 +11,9 @@ namespace bitcoin
     public:
         ISerdes(const std::string& sc_name):m_my_name(sc_name){}
         virtual void serialize() = 0;
-        virtual void descerialize() = 0;
+        virtual void deserialize() = 0;
     protected:
-    const std::string &m_my_name;
+    std::string m_my_name;
     avro::ValidSchema trade_schema;
     };
 } // namespace bitcoin

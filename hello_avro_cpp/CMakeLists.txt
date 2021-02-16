@@ -51,8 +51,8 @@ endif(CMAKE_BUILD_TYPE STREQUAL "Debug")
    # cpp flags
   set(CMAKE_CXX_FLAGS "")
   #-D_GLIBCXX_USE_CXX11_ABI=0
-  SET(CMAKE_CXX_FLAGS_RELEASE "-std=c++1z -O2 -isystem /usr/local/include -g -lpthread -ldl -lavrocpp -lrdkafka")
-  SET(CMAKE_CXX_FLAGS_DEBUG "-std=c++1z -isystem /usr/local/include -g -lpthread -ldl -lavrocpp -lavro -lrdkafka++ -lrdkafka -lcurl -ljansson ")
+  SET(CMAKE_CXX_FLAGS_RELEASE "-std=c++1z -O2 -isystem /usr/local/include -g -lpthread -ldl -lavrocpp -lrdkafka -Wdeprecated-declarations")
+  SET(CMAKE_CXX_FLAGS_DEBUG "-std=c++1z -isystem /usr/local/include -g -lpthread -ldl -lavrocpp -lavro -lrdkafka++ -lrdkafka -lcurl -ljansson -Wdeprecated-declarations ")
   SET(LIBRARIES_BIN_PATH /usr/local/lib CACHE STRING "Location .a, .so")
   SET(LIBRARIES_INCLUDE_PATH /usr/local/include CACHE STRING "Location of includes")
  

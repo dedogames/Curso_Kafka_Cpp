@@ -5,6 +5,7 @@
 
 class Application
 {
+    public:
     Application() {}
     void create_trades()
     {
@@ -16,9 +17,9 @@ class Application
     void run()
     {
 
-        bitcoin::Trade trade_("8615953", "1613358560", "buy", "263249.83999", "0.03000899");
-        //t.serialize();
-        //t.deserialize();
+        bitcoin::Trade trade("8615953", "1613358560", "buy", "263249.83999", "0.03000899");
+        trade.serialize();
+        trade.deserialize();
     }
 
     void shutdown()
