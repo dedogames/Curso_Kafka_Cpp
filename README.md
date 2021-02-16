@@ -60,6 +60,7 @@ Para parar os containers,digite no terminal
 ```json
 docker-compose.exe down
 ```
+Usei o [**VsCode**](https://code.visualstudio.com/) da microsoft para debug, e por esse motivo, já deixei pronto um arquivo launch.json pronto para abrir o projeto no container e ter uma melhor visualização do projeto.
 
 <!-- AVRO CPP -->
 ## Exemplo simples em Avro Cpp
