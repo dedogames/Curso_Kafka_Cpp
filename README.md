@@ -12,7 +12,7 @@ Repositório contendo examplos simples para usar o Apache Kafka com C++
       <a href="#requisitos-para-compilar">Requisitos para compilar</a> 
     </li>     
     <li>
-      <a href="#avro-cpp">Exemplo simples em Avro Cpp</a> 
+      <a href="#exemplo-simples-em-avro-cpp">Exemplo simples em Avro Cpp</a> 
     </li> 
   </ol>
 </details>
