@@ -1,7 +1,8 @@
 <p align="center">
 <img align="center"   src="/images/Kafka-logo.png">
 </p>
-##Repositório contendo examplos simples para usar o Apache Kafka com C++ 
+
+Repositório contendo examplos simples para usar o Apache Kafka com C++
 
 <!-- CONTEUDO -->
 <details open="open">
