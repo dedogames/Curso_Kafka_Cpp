@@ -1,4 +1,7 @@
-# Curso_Kafka_Cpp
+<p align="center">
+<img align="center"   src="/images/Kafka-logo.png">
+</p>
+
 Repositório contendo examplos simples para usar o Apache Kafka com C++
 
 <!-- CONTEUDO -->
@@ -57,6 +60,7 @@ Para parar os containers,digite no terminal
 ```json
 docker-compose.exe down
 ```
+Usei o [**VsCode**](https://code.visualstudio.com/) da microsoft para debug, e por esse motivo, já deixei pronto um arquivo launch.json pronto para abrir o projeto no container e ter uma melhor visualização do projeto.
 
 <!-- AVRO CPP -->
 ## Exemplo simples em Avro Cpp
@@ -79,7 +83,7 @@ Para esse exemplo usei um schema simples representando um negócio do mercado Bi
     ]
  } 
 ```
-E para torna as coisas mais simples abstrai o Avro-cpp, abaixo um exemplo em **C++**de como criar um negócio e serializar/desserialização.
+E para torna as coisas mais simples abstrai o Avro-cpp, abaixo um exemplo em *C++* de como criar um negócio(objeto Trade) e serializar/desserializar.
 ```cpp
 bitcoin::Trade trade("8615953", "1613358560", "buy", "263249.83999", "0.03000899");
 trade.serialize();
