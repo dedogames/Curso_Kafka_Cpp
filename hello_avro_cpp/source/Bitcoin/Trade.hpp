@@ -1,3 +1,14 @@
+//
+// Trade.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Developer: Gelson Rodrigues
+// geoldery@gmail.com
+//
+// Class to represent trade from market Bitcoin.
+// This class implement avro serialize/desserialize
+//
+
 #ifndef TRADE_HPP
 #define TRADE_HPP
 #include <string>

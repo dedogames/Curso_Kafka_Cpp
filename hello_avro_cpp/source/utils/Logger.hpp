@@ -1,3 +1,12 @@
+//
+// Logger.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Developer: Gelson Rodrigues
+// geoldery@gmail.com
+//
+// Simple class to show log on terminal
+
 #ifndef LOGGER_HPP
 #define LOGGER_HPP
 #include <string>

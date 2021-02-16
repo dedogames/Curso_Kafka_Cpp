@@ -1,15 +1,25 @@
-#ifndef ISERDES_HPP
-#define ISERDES_HPP
+//
+// Serdes.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Developer: Gelson Rodrigues
+// geoldery@gmail.com
+//
+// Abstract class to serialize/desserialize
+//  
+//
+#ifndef SERDES_HPP
+#define SERDES_HPP
 #include <avro/Specific.hh>
 #include <avro/Encoder.hh>
 #include <avro/Decoder.hh>
 #include<string>
 namespace bitcoin
 {
-    class ISerdes
+    class Serdes
     {
     public:
-        ISerdes(const std::string& sc_name):m_my_name(sc_name){}
+        Serdes(const std::string& sc_name):m_my_name(sc_name){}
         virtual void serialize() = 0;
         virtual void deserialize() = 0;
     protected:

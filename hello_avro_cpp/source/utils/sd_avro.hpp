@@ -1,3 +1,11 @@
+//
+// sd_avro.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// Developer: Gelson Rodrigues
+// geoldery@gmail.com
+//
+// Class with generic functions
 #ifndef SD_AVRO_HPP
 #define SD_AVRO_HPP
 
