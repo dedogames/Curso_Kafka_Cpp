@@ -41,7 +41,7 @@ Para Simplicar as coisas eu criei imagens usando o Dockerhub, com essa ferrament
 Eu criei 3 imagens:
 
 1. **CentosOs 8** 
-   - Nela já baixei o gcc, cmake, make, perl,boost entre outras ferramentas.
+   - Nela já baixei o gcc 8, cmake 3, make, perl,boost 1.6 entre outras ferramentas.
 
 2. **Bibliotecas para compilar**   
    - Nessa imagem todas as libs que compilo a partir do código(librdkafka, avro-cpp, avro-c, libserdes) e instalo elas no /user/local
@@ -79,7 +79,7 @@ Para esse exemplo usei um schema simples representando um negócio do mercado Bi
     ]
  } 
 ```
-E para torna as coisas mais simples abstrai o AvroC++, abaixo um exemplo de como criar um negócio e serializar/desserialização.
+E para torna as coisas mais simples abstrai o Avro-cpp, abaixo um exemplo em **C++**de como criar um negócio e serializar/desserialização.
 ```cpp
 bitcoin::Trade trade("8615953", "1613358560", "buy", "263249.83999", "0.03000899");
 trade.serialize();
