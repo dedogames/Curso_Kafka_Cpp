@@ -3,7 +3,7 @@ Repositório contendo examplos simples para usar o Apache Kafka com C++
 
 <!-- CONTEUDO -->
 <details open="open">
-  <summary>Conteudo</summary>
+  <summary>Conteúdo</summary>
   <ol>
     <li>
       <a href="#introdução">Introdução Cpp</a> 
