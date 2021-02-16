@@ -21,10 +21,10 @@ O objetivo principal do curso é o Apache Kafka, muito ultilizado em sistemas co
 
 **Importante!** Esse curso não é voltado para iniciantes, caso queria aprender mais sobre os tópicos como C++, Apache Kafka, há diversos materais na internet que são uteis, abaixo cito algumas das minhas fontes.
 
-Livro do mestre(C++)[https://www.amazon.com.br/C-Programming-Language-Bjarne-Stroustrup/dp/0321563840]
-Livro Apache Kafka(Java): [https://www.confluent.io/resources/kafka-the-definitive-guide/]
-Integração usando padrões: [https://www.amazon.com.br/gp/product/0321200683?pf_rd_r=5EXGARCAFTPM52TSJR5E&pf_rd_p=72a7651a-a7d8-4551-b248-c61480b6ce6e&pd_rd_r=ff720a8b-821d-4a4a-8cbb-893912f407da&pd_rd_w=W2FIe&pd_rd_wg=lBDya&ref_=pd_gw_unk]
-Concorrência(C++): [https://www.amazon.com/C-Concurrency-Action-Anthony-Williams/dp/1617294691]
+[Livro do mestre(C++)](https://www.amazon.com.br/C-Programming-Language-Bjarne-Stroustrup/dp/0321563840)
+Livro Apache Kafka(Java): (https://www.confluent.io/resources/kafka-the-definitive-guide/)
+Integração usando padrões: (https://www.amazon.com.br/gp/product/0321200683?pf_rd_r=5EXGARCAFTPM52TSJR5E&pf_rd_p=72a7651a-a7d8-4551-b248-c61480b6ce6e&pd_rd_r=ff720a8b-821d-4a4a-8cbb-893912f407da&pd_rd_w=W2FIe&pd_rd_wg=lBDya&ref_=pd_gw_unk)
+Concorrência(C++): (https://www.amazon.com/C-Concurrency-Action-Anthony-Williams/dp/1617294691)
 
 **Importante!** O objetivo desse material é voltado para o aprendizado em C++ de forma mais prática, portanto padrões de projeto, arquitetura , testes unitários não serão obrigatoriamente mencionados/ultilizados.
 <!-- AVRO CPP -->
